@@ -14,7 +14,7 @@ null_ls.setup({
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    formatting.clang_format.with({ extra_args = {"-style={BasedOnStyle: google, IndentWidth: 4, AccessModifierOffset: -3}"}}),
+    formatting.clang_format.with({ extra_args = {"-style={BasedOnStyle: google, IndentWidth: 4, AccessModifierOffset: -3, ColumnLimit: 280}"}}),
     formatting.cmake_format,
     -- diagnostics.flake8
 	},
