@@ -69,7 +69,9 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- Null-ls
 keymap("n", "<leader>f", ":Format<cr>", opts)
 
 -- Makedown priview
-keymap("n", "<C-m>", ":MarkdownPreviewToggle", opts)
+keymap("n", "<C-m>", ":MarkdownPreviewToggle<cr>", opts)
