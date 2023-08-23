@@ -52,11 +52,11 @@ return packer.startup(function(use)
   }
   use {"nvim-tree/nvim-tree.lua"}
   use "nvim-tree/nvim-web-devicons"
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-    end
-  }
+  --[[ use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'} ]]
+  --[[ use {"akinsho/toggleterm.nvim", tag = '*', config = function() ]]
+  --[[   require("toggleterm").setup() ]]
+  --[[   end ]]
+  --[[ } ]]
   use 'lewis6991/impatient.nvim' -- This plugin does several things to speed loading Lua modules and files.
   
   -- Colorschemes
