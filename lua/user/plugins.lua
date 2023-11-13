@@ -40,70 +40,6 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
-<<<<<<< HEAD
- -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use {'numToStr/Comment.nvim', -- Easily comment stuff
-    config = function()
-        require('Comment').setup()
-    end
-  }
-  use {"nvim-tree/nvim-tree.lua"}
-  use "nvim-tree/nvim-web-devicons"
-  --[[ use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'} ]]
-  --[[ use {"akinsho/toggleterm.nvim", tag = '*', config = function() ]]
-  --[[   require("toggleterm").setup() ]]
-  --[[   end ]]
-  --[[ } ]]
-  use 'lewis6991/impatient.nvim' -- This plugin does several things to speed loading Lua modules and files.
-  
-  -- Colorschemes
-  -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use { "catppuccin/nvim", as = "catppuccin" }
-
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
-  use "hrsh7th/cmp-buffer" -- buffer completions
-  use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip" -- snippet completions
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-nvim-lua"
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
-  -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-
-  -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/mason.nvim" -- simple to use language server installer
-  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
-  use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
-
-  -- Telescope
-  use "nvim-telescope/telescope.nvim"
-
-  -- Treesitter
-  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
-  use "p00f/nvim-ts-rainbow"
-
-  -- Comment
-  use "JoosepAlviste/nvim-ts-context-commentstring"
-
-  -- Git 
-  use "lewis6991/gitsigns.nvim"
-
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if PACKER_BOOTSTRAP then
-    require("packer").sync()
-  end
-
-=======
 	-- My plugins here
 	use "wbthomason/packer.nvim" -- Have packer manage itself
 	use "nvim-lua/popup.nvim"   -- An implementation of the Popup API from vim in Neovim
@@ -177,5 +113,4 @@ return packer.startup(function(use)
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
->>>>>>> dev
 end)

@@ -10,10 +10,7 @@ require "user.autopairs"
 require "user.comment"
 require "user.gitsigns"
 require "user.nvim-tree"
-<<<<<<< HEAD
-=======
 require "user.dap-go"
->>>>>>> dev
 --[[ require "user.bufferline" ]]
 --[[ require "user.toggleterm" ]]
 require "user.impatient"
