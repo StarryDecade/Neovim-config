@@ -14,8 +14,11 @@ null_ls.setup({
 		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    	formatting.clang_format.with({ extra_args = {"-style={BasedOnStyle: google, IndentWidth: 4, AccessModifierOffset: -4, ColumnLimit: 380}"}}),
-    	formatting.cmake_format,
-    -- diagnostics.flake8
+		formatting.clang_format.with({ extra_args = { "-style={BasedOnStyle: google, IndentWidth: 4, AccessModifierOffset: -4, ColumnLimit: 380}" } }),
+		formatting.cmake_format,
+		formatting.gofumpt,
+		formatting.goimports_reviser,
+		formatting.golines,
+		-- diagnostics.flake8
 	},
 })
