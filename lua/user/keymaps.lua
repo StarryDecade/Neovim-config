@@ -74,4 +74,4 @@ keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>f", ":Format<cr>", opts)
 
 -- Makedown priview
---[[ keymap("n", "<C-m>", ":MarkdownPreviewToggle<cr>", opts) ]]
+keymap("n", "<C-p>", ":MarkdownPreviewToggle<cr>", opts)

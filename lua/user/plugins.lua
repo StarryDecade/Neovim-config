@@ -72,14 +72,8 @@ return packer.startup(function(use)
 	use "hrsh7th/cmp-nvim-lsp"
 	use "hrsh7th/cmp-nvim-lua"
 
-	-- install without yarn or npm
-	use({
-		"iamcco/markdown-preview.nvim",
-		run = function() vim.fn["mkdp#util#install"]() end,
-	})
-
 	--[[ use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { ]]
-			--[[ "markdown" } end, ft = { "markdown" }, }) ]]
+	--[[ "markdown" } end, ft = { "markdown" }, }) ]]
 
 	-- snippets
 	use "L3MON4D3/LuaSnip"          --snippet engine
@@ -107,6 +101,11 @@ return packer.startup(function(use)
 	-- go dubg
 	use "mfussenegger/nvim-dap"
 	use "leoluz/nvim-dap-go"
+
+	-- Markdown Preview for (Neo)vim
+
+	use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = {
+			"markdown" } end, ft = { "markdown" }, })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
