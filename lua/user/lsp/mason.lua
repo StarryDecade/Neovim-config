@@ -9,6 +9,8 @@ local servers = {
   "clangd",
   "cmake",
 	"gopls",
+	"erlangls",
+	"elp",
   -- "yamlls",
 }
 
