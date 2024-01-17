@@ -19,6 +19,7 @@ null_ls.setup({
 		formatting.gofumpt,
 		formatting.goimports_reviser,
 		formatting.golines,
+		formatting.erlfmt,
 		-- diagnostics.flake8
 	},
 })
